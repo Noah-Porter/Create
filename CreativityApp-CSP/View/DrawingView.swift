@@ -35,4 +35,21 @@ class DrawingView : UIView
         return figure
     }
     
+    //X&Y or CGPoint and a Size.
+
+    private func createStickFigure(at center : CGPoint, ofSize : CGFloat) -> Void
+    {
+        let specialFigure : UIBezierPath = UIBezierPath()
+        specialFigure.addArc(withCenter: center,
+                             radius: ofSize,
+                             startAngle: CGFloat(0),
+                             endAngle: CGFloat(2) * CGFloat.pi,
+                             clockwise: true)
+        
+        specialFigure.move(to: CGPoint (x: center.x, y: center.y + ofSize))
+        specialFigure.addLine(to: CGPoint(x: center.x, y: center.y + (ofSize * 2.5)))
+        specialFigure.move(to: CGPoint(x: center.x - ofSize, y: center.y + (ofSize * 2)))
+    }
+
+    
 }
