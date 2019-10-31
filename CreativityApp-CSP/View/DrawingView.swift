@@ -18,6 +18,17 @@ class DrawingView : UIView
         createStickFigure(at: CGPoint(x: 12, y: 56), ofSize: CGFloat(50))
     }
     
+    private func drawTurtle() -> Void
+    {
+        let logo = UIBezierPath()
+        UIColor.white.setFill()
+        logo.move(to: CGPoint(x: 50, y: 250))
+        logo.addLine(to: CGPoint(x: 100, y: 300))
+        logo.addLine(to: CGPoint(x: 50, y: 350))
+        logo.close()
+        logo.fill()
+    }
+    
     private func createStickFigure() -> UIBezierPath
     {
         let figure : UIBezierPath = UIBezierPath()
@@ -62,7 +73,7 @@ class DrawingView : UIView
         specialFigure.addLine(to: CGPoint(x: center.x - ofSize, y: center.y + (ofSize * 5)))
         specialFigure.move(to: CGPoint(x: center.x, y: center.y + (ofSize * 3.5)))
         specialFigure.addLine(to: CGPoint(x: center.x + ofSize, y: center.y + (ofSize * 5)))
-    
+        
         UIColor.orange.setStroke()
         specialFigure.lineWidth = 3
         specialFigure.stroke()
