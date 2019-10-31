@@ -10,6 +10,14 @@ import UIKit
 
 class DrawingView : UIView
 {
+    
+    public override func draw(_ rect: CGRect) -> Void
+    {
+        // Drawing Code
+        createStickFigure().stroke()
+        createStickFigure(at: CGPoint(x: 12, y: 56), ofSize: CGFloat(50))
+    }
+    
     private func createStickFigure() -> UIBezierPath
     {
         let figure : UIBezierPath = UIBezierPath()
