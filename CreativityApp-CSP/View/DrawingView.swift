@@ -55,7 +55,11 @@ class DrawingView : UIView
         specialFigure.move(to: CGPoint(x: center.x, y: center.y + (ofSize * 3.5)))
         specialFigure.addLine(to: CGPoint(x: center.x + ofSize, y: center.y + (ofSize * 5)))
     
+        UIColor.orange.setStroke()
+        specialFigure.lineWidth = 3
         specialFigure.stroke()
+        
+        
     }
     
 }
