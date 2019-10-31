@@ -47,9 +47,15 @@ class DrawingView : UIView
                              clockwise: true)
         
         specialFigure.move(to: CGPoint (x: center.x, y: center.y + ofSize))
-        specialFigure.addLine(to: CGPoint(x: center.x, y: center.y + (ofSize * 2.5)))
+        specialFigure.addLine(to: CGPoint(x: center.x, y: center.y + (ofSize * 3.5)))
         specialFigure.move(to: CGPoint(x: center.x - ofSize, y: center.y + (ofSize * 2)))
+        specialFigure.addLine(to: CGPoint(x: center.x + ofSize, y: center.y + (ofSize * 2)))
+        specialFigure.move(to: CGPoint(x: center.x, y: center.y + (ofSize * 3.5)))
+        specialFigure.addLine(to: CGPoint(x: center.x - ofSize, y: center.y + (ofSize * 5)))
+        specialFigure.move(to: CGPoint(x: center.x, y: center.y + (ofSize * 3.5)))
+        specialFigure.addLine(to: CGPoint(x: center.x + ofSize, y: center.y + (ofSize * 5)))
+    
+        specialFigure.stroke()
     }
-
     
 }
