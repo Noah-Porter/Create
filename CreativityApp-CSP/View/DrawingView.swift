@@ -29,6 +29,35 @@ class DrawingView : UIView
         logo.fill()
     }
     
+    private func drawWidthImage() -> Void
+    {
+        let bobRoss : UIBezierPath = UIBezierPath()
+        
+        UIColor(patternImage: UIImage(named: "bobpool")!).setFill()
+        UIColor.green.setStroke()
+        bobRoss.lineWidth = 1.4
+        
+        bobRoss.move(to: CGPoint(x: 150, y: 40))
+        bobRoss.addLine(to: CGPoint(x: 75, y: 200))
+        bobRoss.addLine(to: CGPoint(x: 50, y: 200))
+        bobRoss.addLine(to: CGPoint(x: 0, y: 50))
+        bobRoss.close()
+        bobRoss.stroke()
+        bobRoss.fill()
+        
+        
+        
+        bobRoss.move(to: CGPoint(x: 250, y: 250))
+        bobRoss.addLine(to: CGPoint(x: 290, y: 270))
+        bobRoss.addLine(to: CGPoint(x: 260, y: 280))
+        bobRoss.addLine(to: CGPoint(x: 290, y: 240))
+        bobRoss.addLine(to: CGPoint(x: 250, y: 250))
+        bobRoss.close()
+        bobRoss.stroke()
+        bobRoss.fill()
+    }
+    
+    
     private func createStickFigure() -> UIBezierPath
     {
         let figure : UIBezierPath = UIBezierPath()
@@ -53,6 +82,8 @@ class DrawingView : UIView
         
         return figure
     }
+    
+    
     
     //X&Y or CGPoint and a Size.
 
