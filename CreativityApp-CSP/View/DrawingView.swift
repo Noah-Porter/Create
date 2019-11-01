@@ -57,6 +57,11 @@ class DrawingView : UIView
         bobRoss.fill()
     }
     
+    private func drawEyeImage() -> Void
+    {
+
+    }
+    
     
     private func createStickFigure() -> UIBezierPath
     {
@@ -82,8 +87,6 @@ class DrawingView : UIView
         
         return figure
     }
-    
-    
     
     //X&Y or CGPoint and a Size.
 
