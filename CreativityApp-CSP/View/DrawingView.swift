@@ -46,7 +46,6 @@ class DrawingView : UIView
         bobRoss.fill()
         
         
-        
         bobRoss.move(to: CGPoint(x: 250, y: 250))
         bobRoss.addLine(to: CGPoint(x: 290, y: 270))
         bobRoss.addLine(to: CGPoint(x: 260, y: 280))
@@ -76,6 +75,8 @@ class DrawingView : UIView
                       endAngle: CGFloat(2) * CGFloat.pi,
                       clockwise: true)
         
+        
+        
         figure.move(to: CGPoint(x: 200, y: 220))
         figure.addLine(to: CGPoint(x: 200, y: 270))
         figure.move(to: CGPoint(x: 180, y: 240))
@@ -98,6 +99,9 @@ class DrawingView : UIView
                              startAngle: CGFloat(0),
                              endAngle: CGFloat(2) * CGFloat.pi,
                              clockwise: true)
+        
+        // understand more: the relation between special figure and figure
+        
         
         specialFigure.move(to: CGPoint (x: center.x, y: center.y + ofSize))
         specialFigure.addLine(to: CGPoint(x: center.x, y: center.y + (ofSize * 3.5)))
