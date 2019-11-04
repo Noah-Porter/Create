@@ -74,7 +74,6 @@ class DrawingView : UIView
 
     }
     
-    
     private func createStickFigure() -> UIBezierPath
     {
         let figure : UIBezierPath = UIBezierPath()
