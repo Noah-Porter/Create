@@ -56,6 +56,19 @@ class DrawingView : UIView
         bobRoss.fill()
     }
     
+    private func lotsOfFigures() -> Void
+    {
+        for _ in 1...5
+        {
+            let randomX = CGFloat(arc4random() % 300)
+            let randomY = CGFloat(arc4random() % 300)
+            let randomSize = CGFloat(arc4random() % 100)
+            
+            createStickFigure(at: CGPoint(x: randomX, y: randomY), ofSize: randomSize)
+            
+        }
+    }
+    
     private func drawEyeImage() -> Void
     {
 
