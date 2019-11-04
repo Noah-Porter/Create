@@ -58,7 +58,7 @@ class DrawingView : UIView
     
     private func lotsOfFigures() -> Void
     {
-        for _ in 1...5
+        for _ in 1...100
         {
             let randomX = CGFloat(arc4random() % 300)
             let randomY = CGFloat(arc4random() % 300)
@@ -125,11 +125,21 @@ class DrawingView : UIView
         specialFigure.move(to: CGPoint(x: center.x, y: center.y + (ofSize * 3.5)))
         specialFigure.addLine(to: CGPoint(x: center.x + ofSize, y: center.y + (ofSize * 5)))
         
-        UIColor.orange.setStroke()
+        makeRandomColor().setStroke()
         specialFigure.lineWidth = 3
         specialFigure.stroke()
         
         
     }
+    
+    private func makeRandomColor() -> UIColor
+    {
+        let red : CGFloat = CGFloat( Double(arc4random() % 256) / 255.0)
+        let green : CGFloat = CGFloat( Double(arc4random() % 256) / 255.0)
+        let blue : CGFloat = CGFloat( Double(arc4random() % 256) / 255.0)
+        let color = UIColor(red: red, green: green, blue: blue, alpha: CGFloat(1.0))
+        return color
+    }
+    
     
 }
