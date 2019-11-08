@@ -14,7 +14,6 @@ class ArtCollectionViewController : UICollectionViewController
     var images : [String]!
     var titles : [String]!
     
-    
     //MARK: - Lifecycle methods
     override func viewDidLoad() -> Void
     {
@@ -32,7 +31,11 @@ class ArtCollectionViewController : UICollectionViewController
     
     public override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section : Int) -> Int
     {
-        return -1
+        if (images != nil)
+        {
+            return images.count
+        }
+        return 0
     }
     
     private func loadImages() -> Void
@@ -64,6 +67,7 @@ class ArtCollectionViewController : UICollectionViewController
         let imageList = [imageOne, imageTwo, imageThree, imageFour, imageFive, imageSix]
         let titleList : [String] = [imageOneTitle, imageTwoTitle, imageThreeTitle, imageFourTitle, imageFiveTitle, imageSixTitle]
         
-        
+        titles = titleList
+        images = imageList
     }
 }
