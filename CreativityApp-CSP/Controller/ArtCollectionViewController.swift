@@ -13,6 +13,7 @@ class ArtCollectionViewController : UICollectionViewController
     //MARK: Data members for the ArtCollectionViewController
     var images : [String]!
     var titles : [String]!
+    let reuseIdentifier = "artIdentifier"
     
     //MARK: - Lifecycle methods
     override func viewDidLoad() -> Void
@@ -71,5 +72,18 @@ class ArtCollectionViewController : UICollectionViewController
         return 0
     }
     
+    public override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
+        let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtCell
+        
+        artCell.backgroundColor = .blue
+        artCell.artImage.image = UIImage.init(named: images[indexPath.row])
+        
+        //artCell.artImage.image = images[indexPath.row]
+        
+        artCell.artLabel.text = titles[indexPath.row]
+        
+        return artCell
+    }
 
 }
