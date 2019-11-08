@@ -10,11 +10,29 @@ import UIKit
 
 class ArtCollectionViewController : UICollectionViewController
 {
+    //MARK: Data members for the ArtCollectionViewController
+    var images : [String]!
+    var titles : [String]!
+    
+    
+    //MARK: - Lifecycle methods
     override func viewDidLoad() -> Void
     {
         super.viewDidLoad()
         
         loadImages()
+    }
+    
+    // MARK: - Navigation / Layout
+    
+    public override func numberOfSections(in collectionView: UICollectionView) -> Int
+    {
+        return 1
+    }
+    
+    public override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section : Int) -> Int
+    {
+        return -1
     }
     
     private func loadImages() -> Void
