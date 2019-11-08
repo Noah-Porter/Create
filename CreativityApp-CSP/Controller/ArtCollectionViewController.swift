@@ -24,20 +24,6 @@ class ArtCollectionViewController : UICollectionViewController
     
     // MARK: - Navigation / Layout
     
-    public override func numberOfSections(in collectionView: UICollectionView) -> Int
-    {
-        return 1
-    }
-    
-    public override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section : Int) -> Int
-    {
-        if (images != nil)
-        {
-            return images.count
-        }
-        return 0
-    }
-    
     private func loadImages() -> Void
     {
         let imageOne : String = "SunGlasses"
@@ -57,11 +43,11 @@ class ArtCollectionViewController : UICollectionViewController
         let imageFourTitle : String = "Java Haiku"
         
         let imageFive : String = "MTM"
-    
+        
         let imageFiveTitle : String = "MTM Haiku"
         
         let imageSix : String = "Swift Haiku"
-    
+        
         let imageSixTitle : String = "Swift Haiku"
         
         let imageList = [imageOne, imageTwo, imageThree, imageFour, imageFive, imageSix]
@@ -70,4 +56,20 @@ class ArtCollectionViewController : UICollectionViewController
         titles = titleList
         images = imageList
     }
+    
+    public override func numberOfSections(in collectionView: UICollectionView) -> Int
+    {
+        return 1
+    }
+    
+    public override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section : Int) -> Int
+    {
+        if (images != nil)
+        {
+            return images.count
+        }
+        return 0
+    }
+    
+
 }
