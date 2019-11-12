@@ -86,13 +86,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vLf-Qy-n55" userLabel="Art Panel" customClass="DrawingView" customModule="CreativityApp_CSP" customModuleProvider="target">
-                                <rect key="frame" x="23" y="161" width="344" height="370"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vLf-Qy-n55" userLabel="Art Panel" customClass="DrawingView" customModule="CreativityApp_CSP" customModuleProvider="target">
+                                <rect key="frame" x="23" y="161" width="375" height="647"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoP-YZ-p1L">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoP-YZ-p1L">
                                 <rect key="frame" x="115" y="617" width="145" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="To the Art Collection!"/>
                                 <connections>
                                     <segue destination="e5V-SW-VPL" kind="show" id="jOG-MK-cLZ"/>
@@ -101,7 +100,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="aoP-YZ-p1L" firstAttribute="top" secondItem="vLf-Qy-n55" secondAttribute="bottom" constant="86" id="CYL-qC-UHv"/>
                             <constraint firstItem="vLf-Qy-n55" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="GlC-fj-DHx"/>
+                            <constraint firstItem="vLf-Qy-n55" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="141" id="hSA-ie-Z0S"/>
+                            <constraint firstItem="vLf-Qy-n55" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="mmX-Q3-vMh"/>
+                            <constraint firstItem="aoP-YZ-p1L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pEm-wO-aIG"/>
                             <constraint firstItem="vLf-Qy-n55" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="s6C-ey-NsO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

@@ -78,6 +78,7 @@ class ArtCollectionViewController : UICollectionViewController
         
         artCell.backgroundColor = .blue
         artCell.artImage.image = UIImage.init(named: images[indexPath.row])
+        //Gar
         
         //artCell.artImage.image = images[indexPath.row]
         
