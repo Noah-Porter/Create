@@ -35,16 +35,15 @@
                                             <rect key="frame" x="0.0" y="13" width="250" height="277"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DJ1-1h-Bj1">
-                                                    <rect key="frame" x="0.0" y="0.0" width="210" height="200"/>
+                                                    <rect key="frame" x="20" y="0.0" width="210" height="200"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="200" id="eSI-l8-OtS"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qc6-fH-ewj">
-                                                    <rect key="frame" x="84" y="200" width="42" height="25"/>
+                                                    <rect key="frame" x="104" y="200" width="42" height="8"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="42" id="P0u-SS-LLI"/>
-                                                        <constraint firstAttribute="height" constant="25" id="UAA-DL-vCa"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -52,14 +51,15 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="DJ1-1h-Bj1" firstAttribute="centerY" secondItem="Zdd-yt-Hi3" secondAttribute="centerY" id="Ryd-Sb-MS4"/>
                                                 <constraint firstItem="DJ1-1h-Bj1" firstAttribute="centerX" secondItem="Zdd-yt-Hi3" secondAttribute="centerX" id="hqj-Wx-KG9"/>
                                             </constraints>
                                         </stackView>
                                     </subviews>
                                 </view>
                                 <constraints>
+                                    <constraint firstItem="Zdd-yt-Hi3" firstAttribute="leading" secondItem="l5Z-4h-8XM" secondAttribute="leading" id="7LU-Yw-sfR"/>
                                     <constraint firstItem="Zdd-yt-Hi3" firstAttribute="centerX" secondItem="l5Z-4h-8XM" secondAttribute="centerX" id="GiT-lu-HBr"/>
+                                    <constraint firstItem="Zdd-yt-Hi3" firstAttribute="top" secondItem="l5Z-4h-8XM" secondAttribute="topMargin" constant="-7" id="JPL-bQ-9g9"/>
                                     <constraint firstItem="Zdd-yt-Hi3" firstAttribute="centerY" secondItem="l5Z-4h-8XM" secondAttribute="centerY" id="o4F-yG-QZa"/>
                                 </constraints>
                                 <connections>
@@ -100,11 +100,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="aoP-YZ-p1L" firstAttribute="top" secondItem="vLf-Qy-n55" secondAttribute="bottom" constant="86" id="CYL-qC-UHv"/>
+                            <constraint firstItem="vLf-Qy-n55" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="141" id="8hw-Jl-kas"/>
+                            <constraint firstItem="aoP-YZ-p1L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cvl-xf-7xL"/>
+                            <constraint firstItem="aoP-YZ-p1L" firstAttribute="top" secondItem="vLf-Qy-n55" secondAttribute="bottom" constant="86" id="GLO-fN-Spq"/>
                             <constraint firstItem="vLf-Qy-n55" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="GlC-fj-DHx"/>
-                            <constraint firstItem="vLf-Qy-n55" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="141" id="hSA-ie-Z0S"/>
-                            <constraint firstItem="vLf-Qy-n55" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="mmX-Q3-vMh"/>
-                            <constraint firstItem="aoP-YZ-p1L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pEm-wO-aIG"/>
+                            <constraint firstItem="vLf-Qy-n55" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="qmg-Du-q5N"/>
                             <constraint firstItem="vLf-Qy-n55" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="s6C-ey-NsO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
