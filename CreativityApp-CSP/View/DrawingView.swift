@@ -67,6 +67,8 @@ class DrawingView : UIView
             createStickFigure(at: CGPoint(x: randomX, y: randomY), ofSize: randomSize)
             
         }
+        
+        
     }
     
     private func drawEyeImage() -> Void
@@ -135,7 +137,7 @@ class DrawingView : UIView
         let red : CGFloat = CGFloat( Double(arc4random() % 256) / 255.0)
         let green : CGFloat = CGFloat( Double(arc4random() % 256) / 255.0)
         let blue : CGFloat = CGFloat( Double(arc4random() % 256) / 255.0)
-        let color = UIColor(red: red, green: green, blue: blue, alpha: CGFloat(1.0))
+        let color = UIColor(red: red, green: green, blue: blue, alpha: CGFloat(0.70))
         return color
     }
     

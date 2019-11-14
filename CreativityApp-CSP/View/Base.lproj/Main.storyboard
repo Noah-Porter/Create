@@ -9,58 +9,58 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Collection View Controller-->
+        <!--Art Collection View Controller-->
         <scene sceneID="Fjo-1S-gp4">
             <objects>
-                <collectionViewController id="e5V-SW-VPL" sceneMemberID="viewController">
+                <collectionViewController id="e5V-SW-VPL" customClass="ArtCollectionViewController" customModule="CreativityApp_CSP" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="1ok-4b-YEQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lR8-NE-H3H">
-                            <size key="itemSize" width="250" height="250"/>
+                            <size key="itemSize" width="200" height="200"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="l5Z-4h-8XM" customClass="ArtCell">
-                                <rect key="frame" x="62.5" y="0.0" width="250" height="250"/>
+                                <rect key="frame" x="87.5" y="0.0" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zdd-yt-Hi3">
                                             <rect key="frame" x="0.0" y="13" width="250" height="277"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DJ1-1h-Bj1">
-                                                    <rect key="frame" x="20" y="0.0" width="210" height="200"/>
+                                                    <rect key="frame" x="25" y="0.0" width="208" height="200"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="200" id="eSI-l8-OtS"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qc6-fH-ewj">
-                                                    <rect key="frame" x="104" y="200" width="42" height="8"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="42" id="P0u-SS-LLI"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="0.0" y="200" width="258" height="61"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="DJ1-1h-Bj1" firstAttribute="width" secondItem="Zdd-yt-Hi3" secondAttribute="width" id="bPY-Aa-zcR"/>
                                                 <constraint firstItem="DJ1-1h-Bj1" firstAttribute="centerX" secondItem="Zdd-yt-Hi3" secondAttribute="centerX" id="hqj-Wx-KG9"/>
+                                                <constraint firstItem="qc6-fH-ewj" firstAttribute="width" secondItem="Zdd-yt-Hi3" secondAttribute="width" id="kxK-OM-LGD"/>
+                                                <constraint firstItem="DJ1-1h-Bj1" firstAttribute="leading" secondItem="Zdd-yt-Hi3" secondAttribute="leading" constant="25" id="qk7-6o-tXa"/>
                                             </constraints>
                                         </stackView>
                                     </subviews>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="Zdd-yt-Hi3" firstAttribute="leading" secondItem="l5Z-4h-8XM" secondAttribute="leading" id="7LU-Yw-sfR"/>
-                                    <constraint firstItem="Zdd-yt-Hi3" firstAttribute="centerX" secondItem="l5Z-4h-8XM" secondAttribute="centerX" id="GiT-lu-HBr"/>
-                                    <constraint firstItem="Zdd-yt-Hi3" firstAttribute="top" secondItem="l5Z-4h-8XM" secondAttribute="topMargin" constant="-7" id="JPL-bQ-9g9"/>
-                                    <constraint firstItem="Zdd-yt-Hi3" firstAttribute="centerY" secondItem="l5Z-4h-8XM" secondAttribute="centerY" id="o4F-yG-QZa"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="Zdd-yt-Hi3" secondAttribute="bottom" constant="-90" id="OgR-vw-qob"/>
+                                    <constraint firstItem="Zdd-yt-Hi3" firstAttribute="leading" secondItem="l5Z-4h-8XM" secondAttribute="leading" id="b7P-HR-EyW"/>
+                                    <constraint firstItem="Zdd-yt-Hi3" firstAttribute="top" secondItem="l5Z-4h-8XM" secondAttribute="topMargin" constant="-7" id="pJo-8c-Yrp"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Zdd-yt-Hi3" secondAttribute="trailing" constant="-66" id="yWQ-Ws-Vv6"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="artImage" destination="DJ1-1h-Bj1" id="hKX-ua-R9X"/>

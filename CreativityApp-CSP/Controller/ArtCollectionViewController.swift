@@ -14,6 +14,7 @@ class ArtCollectionViewController : UICollectionViewController
     var images : [String]!
     var titles : [String]!
     let reuseIdentifier = "artIdentifier"
+    private let sectionInsets = UIEdgeInsets(top: 10.0, left: 2.0, bottom: 10.0, right: 2.0)
     
     //MARK: - Lifecycle methods
     override func viewDidLoad() -> Void
