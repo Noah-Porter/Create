@@ -110,4 +110,15 @@ class ArtCollectionViewController : UICollectionViewController
         
     }
 
+    //MARK: - Handle spacing components
+    
+    public func collectionVew(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insertForSectionAt section: Int) -> UIEdgeInsets
+    {
+        return sectionInsets
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat
+    {
+        return sectionInsets.left
+    }
 }
