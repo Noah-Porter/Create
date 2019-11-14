@@ -87,5 +87,27 @@ class ArtCollectionViewController : UICollectionViewController
         
         return artCell
     }
+    
+    //MARK: - Handle Touch
+    @objc
+    private func dismissFullscreenImage(_ sender: UITapGestureRecognizer) -> Void
+    {
+        sender.view?.removeFromSuperview()
+    }
+    
+    public override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+    {
+        let imageView = UIImageView(image: UIImage.init(named: images[indexPath.row]))
+        imageView.frame = self.view.frame
+        imageView.backgroundColor = .black
+        imageView.contentMode = .scaleAspectFit
+        imageView.isUserInteractionEnabled = true
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
+            imageView.addGestureRecognizer(tap)
+        
+            self.view.addSubview(imageView)
+        
+    }
 
 }
