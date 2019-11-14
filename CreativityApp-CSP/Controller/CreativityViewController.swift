@@ -10,7 +10,10 @@ import UIKit
 
 class CreativityViewController : UIViewController
 {
-
+    
+    
+    @IBOutlet weak var ArtPanel: DrawingView!
+    
     override func viewDidLoad() -> Void
     {
         super.viewDidLoad()

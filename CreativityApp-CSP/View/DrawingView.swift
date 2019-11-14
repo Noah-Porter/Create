@@ -128,7 +128,6 @@ class DrawingView : UIView
         specialFigure.lineWidth = 3
         specialFigure.stroke()
         
-        
     }
     
     private func makeRandomColor() -> UIColor
@@ -139,6 +138,5 @@ class DrawingView : UIView
         let color = UIColor(red: red, green: green, blue: blue, alpha: CGFloat(1.0))
         return color
     }
-    
     
 }
